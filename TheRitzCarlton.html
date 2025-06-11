@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" type="x-icon" href="../images/logo/city-of-perth-logo.png" >
+    <script src="../scriptForm.js" defer></script>
+    <title>The Ritz-Carlton</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="../PaginaPrincipala/PaginaPrincipala.html">
+                    <img src="../images/logo/city-of-perth-logo.png" alt="Logo Perth" width="150" class="logo"></a>
+            </div>
+            <ul id="menuList">
+                <li><a href="../PaginaPrincipala/PaginaPrincipala.html">Perth</a></li>
+                <li><a href="../obiective/obiectiveTuristice.html">Obiective</a></li>
+                <li><a href="../Cazari/Cazari.html" class="active">Cazare</a></li>
+                <li><a href="../Evenimente/Evenimente.html">Evenimente</a></li>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="content-cazari">
+            <ul class="imagini-cazari">
+                <li><img src="../images/cazari/theritzcarlton/theritzcarlton1.jpg" alt="The Ritz-Carlton Hotel" ></li>
+                <li><img src="../images/cazari/theritzcarlton/theritzcarlton2.jpg" alt="The Ritz-Carlton Camera" ></li>
+                <div class="p-cazari">
+                    <p>Ritz-Carlton, Perth oferă un restaurant, o piscină exterioară, un centru de fitness și un bar în Perth. Printre facilitățile de la această proprietate se numără o recepție deschisă 24 de ore și room service, alături de WiFi gratuit în întreaga proprietate. Parcarea privată este disponibilă la fața locului.</p>
+                </div>
+                <div class="p-cazari">
+                    <p class="cazari-hide-telefon">Unitățile de cazare sunt dotate cu aer condiționat, un televizor cu ecran plat și canale prin satelit, DVD player și o baie privată cu duș, uscător de păr și articole de toaletă gratuite. Camerele includ, de asemenea, un birou și o mașină de cafea. Ritz-Carlton, Perth oferă micul dejun continental sau preparat la cald.</p>
+                </div>
+                <li><img class="cazari-hide-telefon" src="../images/cazari/theritzcarlton/theritzcarlton3.jpg" alt="The Ritz-Carlton Camera" ></li>
+                <li><img class="cazari-hide-telefon" src="../images/cazari/theritzcarlton/theritzcarlton4.jpg" alt="The Ritz-Carlton Camera" ></li>
+                <li><img class="cazari-hide" src="../images/cazari/theritzcarlton/theritzcarlton5.jpg" alt="The Ritz-Carlton Camera" ></li>
+                <li><img class="cazari-hide" src="../images/cazari/theritzcarlton/theritzcarlton6.jpg" alt="The Ritz-Carlton Camera" ></li>
+                <div class="p-cazari">
+                <p class="cazari-hide">Punctele de interes populare în apropierea hotelului includ Perth Concert Hall, Perth Convention and Exhibition Centre și Perth Town Hall. Cel mai apropiat aeroport este Aeroportul Perth, situat la 16 km de hotel.</p>
+                </div>
+            </ul>
+            </div>
+            <div class="form-content">
+                <form action="mailto:andreicodreanu1201@gmail.com" method="post" class="formular" enctype="text/plain">
+                    <h2>Formular Rezervare</h2>
+                    <div class="input-row">
+                        <div class="input-box">
+                            <label for="LastName">Nume:</label>
+                            <input type="text" id="LastName" name="LastName" placeholder="ex. Popescu" >
+                        </div>
+                        <div class="input-box">
+                            <label for="FirstName">Prenume:</label>
+                            <input type="text" id="FirstName" name="FirstName" placeholder="ex. Andrei" >
+                        </div>
+                    </div>
+                    
+                    <div class="input-row">
+                        <div class="input-box">
+                            <label for="adress">Adresa:</label>
+                            <input type="text" id="adress" name="adress" >
+                        </div>
+                        <div class="input-box">
+                            <label for="oras">Oras:</label>
+                            <input type="text" name="oras" id="oras" >
+                        </div>
+                    </div>
+                    
+                    <div class="input-row">
+                        <div class="input-box">
+                            <label for="judet">Judet:</label>
+                            <input type="text" name="judet" id="judet" >
+                        </div>
+                        <div class="input-box">
+                            <label for="PostalCode">Cod Postal:</label>
+                            <input type="text" name="PostalCode" id="PostalCode" >
+                        </div>
+                    </div>
+                
+                    <div class="input-row">
+                        <div class="input-box">
+                            <label for="PhoneNumber">Telefon:</label>
+                            <input type="tel" name="PhoneNumber" id="PhoneNumber" placeholder="(0700)-000-000" >
+                        </div>
+                        <div class="input-box">
+                            <label for="email">E-mail:</label>
+                            <input type="email" name="email" id="email" placeholder="ex: myName@example.com" >
+                        </div>
+                    </div>
+                
+                    <div class="input-row">
+                        <div class="input-box">
+                            <label for="ArrivalDate">De la:</label>
+                            <input type="date" name="ArrivalDate" id="ArrivalDate" >
+                        </div>
+                        <div class="input-box">
+                            <label for="DepartureDate">Pana la:</label>
+                            <input type="date" name="DepartureDate" id="DepartureDate" >
+                        </div>
+                    </div>
+                
+                    <div class="input-row">
+                        <div class="input-box">
+                            <label for="NumarPersoane">Număr Persoane:</label>
+                            <input type="number" name="NumarPersoane" id="NumarPersoane" >
+                        </div>
+                        <div class="input-box">
+                            <label for="Preferinte">Aveți preferințe?</label>
+                            <textarea name="Preferinte" id="Preferinte" rows="1" placeholder="..."></textarea>
+                        </div>
+                    </div>
+                
+                    <div class="button-content">
+                        <input type="submit" value="Trimite">
+                        <input type="reset" value="Resetează">
+                    </div>
+                </form>         
+        <div class="harta-cazari">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3385.087391664614!2d115.85571507587699!3d-31.958525774016465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32bb2a29de1a8d%3A0x40ea21888f20e95!2sThe%20Ritz-Carlton%2C%20Perth!5e0!3m2!1sro!2sro!4v1730199478914!5m2!1sro!2sro" width="600px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-icons">
+                <a href="https://www.facebook.com/CityofPerth/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/cityofperth/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/user/CityOfPerthWA"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="../PaginaPrincipala/PaginaPrincipala.html">Perth</a></li>
+                    <li><a href="../obiective/ObiectiveTuristice.html">Obiective</a></li>
+                    <li><a href="../Cazari/Cazari.html">Cazare</a></li>
+                    <li><a href="../Evenimente/Evenimente.html">Evenimente</a></li>
+                </ul>
+            </div>
+            <div class="footer-copyright">
+                <p>Copyright &copy 2024; Designed by <span class="designer">Codreanu Andrei</span></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
